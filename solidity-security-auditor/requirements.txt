@@ -1,0 +1,26 @@
+# Solidity Security Auditor - Requirements
+# Educational smart contract security analysis tool
+
+# Rich library for beautiful terminal UI
+rich>=13.0.0
+
+# Clipboard functionality for code analysis from clipboard
+pyperclip>=1.8.2
+
+# HTTP requests for fetching contracts from URLs
+requests>=2.28.0
+
+# Optional: Slither static analysis framework
+# Note: Slither requires additional system dependencies
+# Install with: pip install slither-analyzer
+# Or follow instructions at: https://github.com/crytic/slither
+
+# Development and testing dependencies (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Note: For full functionality, you may also want to install:
+# - Solidity compiler (solc): https://docs.soliditylang.org/en/latest/installing-solidity.html
+# - Node.js and npm for some blockchain tooling

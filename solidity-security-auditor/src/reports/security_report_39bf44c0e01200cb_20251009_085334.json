@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-09T08:53:34.262321",
+    "source": "Clipboard content",
+    "code_hash": "39bf44c0e01200cb",
+    "tool_version": "1.0.0"
+  },
+  "findings": [
+    {
+      "vulnerability_type": "Access Control",
+      "severity": "High",
+      "line_number": 6,
+      "code_snippet": "    \n>>>     function setValue(uint _value) public {\n        value = _value;\n    }",
+      "description": "Public/external function without access control",
+      "explanation": "Functions that modify state or perform sensitive operations should have proper access controls to prevent unauthorized access by malicious actors.",
+      "recommendation": "Add appropriate access control modifiers (e.g., onlyOwner) or require statements to restrict function access to authorized users only.",
+      "cwe_id": "CWE-284",
+      "swc_id": "SWC-105"
+    }
+  ],
+  "summary": {
+    "total_findings": 1,
+    "by_severity": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0,
+      "Info": 0
+    }
+  }
+}
